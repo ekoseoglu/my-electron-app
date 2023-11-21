@@ -9,7 +9,7 @@ function App() {
       <svg className="hero-logo" viewBox="0 0 900 300">
         <use xlinkHref={`${icons}#electron`} />
       </svg>
-      <h2 className="hero-text">You{"'"}ve successfully created an Electron project with React</h2>
+      <h2 className="hero-text">NEW RELEASE TEST</h2>
       <p className="hero-tagline">
         Please try pressing <code>F12</code> to open the devTool
       </p>
