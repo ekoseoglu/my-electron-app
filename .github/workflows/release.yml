@@ -24,21 +24,27 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Remove Build Folders
+        run: rm -rf dist output out
 
       - name: Install Dependencies
-        run: npm install -y
+        run: yarn install -y
 
       - name: Package Application
-        run: npm run package
+        run: yarn package
 
       - name: build-linux
         if: matrix.os == 'ubuntu-latest'
-        run: npm run build:linux
+        run: yarn build:linux --x64
 
       - name: build-win
         if: matrix.os == 'windows-latest'
-        run: npm run build:win
+        run: yarn build:win --x64
 
       - name: release
         uses: softprops/action-gh-release@v1
