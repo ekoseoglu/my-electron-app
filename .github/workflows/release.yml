@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Check out Git repository
@@ -24,13 +24,17 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: latest
 
       - name: Install Dependencies
         run: npm install -y
 
       - name: Package Application
         run: npm run package
+
+      - name: build-linux
+        if: matrix.os == 'linux-latest'
+        run: npm run build:linux
 
       - name: build-win
         if: matrix.os == 'windows-latest'
