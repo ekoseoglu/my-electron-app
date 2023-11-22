@@ -10,7 +10,7 @@ function App() {
       </svg>
       <h2 className="hero-text">NEW RELEASE TEST</h2>
       <p className="hero-tagline">
-        Please try pressing <code>F12</code> to open the devTool
+        Background color changed
       </p>
 
       <div className="links">
