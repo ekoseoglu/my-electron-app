@@ -28,7 +28,7 @@
       "cache": "./cache"
     },
     "linux": {
-      "publish": "never",
+      "publish": null,
       "target": [
         "AppImage",
         "deb"
