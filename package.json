@@ -1,6 +1,6 @@
 {
   "name": "my-electron-app",
-  "version": "1.0.9",
+  "version": "1.0.8",
   "description": "An Electron application with React",
   "main": "./output/main/index.js",
   "author": "example.com",
@@ -20,6 +20,7 @@
     "make": "electron-vite build --outDir=output && electron-forge make"
   },
   "build": {
+    "appId": "com.logirit.app",
     "electronDownload": {
       "cache": "./cache"
     }
