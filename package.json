@@ -30,7 +30,7 @@
         "deb"
       ],
       "icon": "build/icon.png"
-    },
+    }
   },
   "dependencies": {
     "@electron-toolkit/preload": "^2.0.0",
