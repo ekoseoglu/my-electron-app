@@ -33,7 +33,7 @@ jobs:
         run: npm run package
 
       - name: build-linux
-        if: matrix.os == 'linux-latest'
+        if: matrix.os == 'ubuntu-latest'
         run: npm run build:linux
 
       - name: build-win
