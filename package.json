@@ -3,7 +3,10 @@
   "version": "1.0.10",
   "description": "An Electron application with React",
   "main": "./output/main/index.js",
-  "author": "example.com",
+  "author": {
+    "name": "Esat Koseoglu",
+    "email": "ekoseoglu22@gmail.com"
+  },
   "homepage": "https://www.electronjs.org",
   "license": "MIT",
   "scripts": {
