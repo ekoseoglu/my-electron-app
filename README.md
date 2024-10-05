@@ -1,4 +1,4 @@
-# my-electron-app
+ # my-electron-app
 
 An Electron application with React
 
